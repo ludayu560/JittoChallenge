@@ -36,7 +36,7 @@ const Login = (props) => {
     };
 
     axios
-      .post("https://sb9mocqhba.execute-api.us-east-2.amazonaws.com/prod/login", requestBody, requestConfig)
+      .post(URL + "login", requestBody, requestConfig)
       .then((response) => {
         setUserSession(response.data.user, response.data.token);
         navigate('/about', { replace: true });
