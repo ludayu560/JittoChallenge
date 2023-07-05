@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JittoChallenge/static/css/main.49e8acfc.css",
+    "main.js": "/JittoChallenge/static/js/main.a05c4b31.js",
+    "index.html": "/JittoChallenge/index.html",
+    "main.49e8acfc.css.map": "/JittoChallenge/static/css/main.49e8acfc.css.map",
+    "main.a05c4b31.js.map": "/JittoChallenge/static/js/main.a05c4b31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e8acfc.css",
+    "static/js/main.a05c4b31.js"
+  ]
+}
