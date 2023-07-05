@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
+import { useState } from "react";
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
   return (
-    <div class="bg-gray-700 h-screen">
+    <div class="bg-gray-700">
       <BrowserRouter>
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -45,10 +47,10 @@ function App() {
 
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home cartItems={cartItems} setCartItems={setCartItems} />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/cart" element={<Cart/>} />
+            <Route path="/cart" element={<Cart cartItems={cartItems}/>} />
           </Routes>
         </div>
       </BrowserRouter>

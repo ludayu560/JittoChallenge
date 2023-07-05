@@ -1,10 +1,16 @@
 import React from "react";
 import axios from "axios";
 import { setUserSession } from "../service/AuthService";
+import { useNavigate } from 'react-router-dom';
+
+
 
 const URL = "https://sb9mocqhba.execute-api.us-east-2.amazonaws.com/prod/";
 
 const Login = (props) => {
+
+  const navigate = useNavigate();
+
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [errorMessage, setErrorMessage] = React.useState("");
@@ -33,7 +39,7 @@ const Login = (props) => {
       .post("https://sb9mocqhba.execute-api.us-east-2.amazonaws.com/prod/login", requestBody, requestConfig)
       .then((response) => {
         setUserSession(response.data.user, response.data.token);
-        // props.history.push('/home');
+        navigate('/about', { replace: true });
       })
       .catch((error) => {
         if (error.response.status === 401 || error.response.status === 403) {
@@ -45,7 +51,7 @@ const Login = (props) => {
   };
 
   return (
-    <div class="container px-4 max-w-6xl mx-auto my-8">
+    <div class="container px-4 max-w-6xl mx-auto my-8 h-screen">
       <div class="w-full max-w-xl mx-auto">
         <form
           class="LgnForm max-w-sm mx-auto shadow-2xl bg-white rounded-lg pt-6 pb-8 mb-4 px-8"

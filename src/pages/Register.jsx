@@ -58,7 +58,7 @@ const Register = () => {
   };
 
   return (
-    <div class="container px-4 max-w-6xl mx-auto my-8">
+    <div class="container px-4 max-w-6xl mx-auto my-8 h-screen">
       <div class="w-full max-w-xl mx-auto">
         <form class="LgnForm max-w-sm mx-auto shadow-2xl bg-white rounded-lg pt-6 pb-8 mb-4 px-8" onSubmit={submitHandler}>
           <div class="MskForm">
