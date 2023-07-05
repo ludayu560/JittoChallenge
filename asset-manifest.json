@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/JittoChallenge/static/css/main.873b5d62.css",
-    "main.js": "/JittoChallenge/static/js/main.283b01dc.js",
+    "main.css": "/JittoChallenge/static/css/main.46d3451e.css",
+    "main.js": "/JittoChallenge/static/js/main.442f8515.js",
     "index.html": "/JittoChallenge/index.html",
-    "main.873b5d62.css.map": "/JittoChallenge/static/css/main.873b5d62.css.map",
-    "main.283b01dc.js.map": "/JittoChallenge/static/js/main.283b01dc.js.map"
+    "main.46d3451e.css.map": "/JittoChallenge/static/css/main.46d3451e.css.map",
+    "main.442f8515.js.map": "/JittoChallenge/static/js/main.442f8515.js.map"
   },
   "entrypoints": [
-    "static/css/main.873b5d62.css",
-    "static/js/main.283b01dc.js"
+    "static/css/main.46d3451e.css",
+    "static/js/main.442f8515.js"
   ]
 }
